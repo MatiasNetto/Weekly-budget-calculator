@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Gasto semanal</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        
+        <div id="modalContainer" class="configuration-container">
+            <div class="configuration-modal">
+                <h2 class="modal-tittle">De cuanto dinero dispones?</h2>
+                <input id="presupuestoInput" class="modal-input" placeholder="Valor en $" type="number">
+                <button class="modal-btn" id="modalBTN">Confirm</button>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="container-block-gui">
+                <h2 class="block-tittle">Agrega tus gastos</h2>
+                <div class="input-container">
+                    <p class="input-name">Gasto:</p>
+                    <input class="input" placeholder="Nombre del gasto" type="text" id="gastoInput">
+                </div>
+                <div class="input-container">
+                    <p class="input-name">Cantidad:</p>
+                    <input class="input" placeholder="Cantidad en $" type="number" id="cantidadInput">
+                </div>
+                <button class="add-btn" id="addBTN">Agregar</button>
+            </div>
+            <div class="container-block-list">
+                <h2 class="block-tittle">Listado</h2>
+                <div class="list-container" id="listContainer">
+                    <!-- <div class="gasto-container">
+                        <p class="gasto-name">gasto</p>
+                        <p class="gasto-amount">120$</p>
+                    </div> -->
+                    <!-- <button class="deleteBTN">X</button> -->
+                </div>
+                <div class="pres-rest-container">
+                    <div class="presupuesto">Presupuesto: <span id="presupuestoDOM">$</span></div>
+                    <div class="restante">Restante: <span id="restanteDOM">$</span></div>
+                </div> 
+            </div>
+        </div>
+
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>

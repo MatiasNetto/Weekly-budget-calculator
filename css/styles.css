@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Modal window*/
+.configuration-container {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0008;
+    backdrop-filter: blur(2px);
+}
+
+.configuration-modal {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-10vh);
+    background: #fff;
+    padding: 3% 0;
+    border-radius: 20px;
+}
+
+.modal-input {
+    height: 20%;
+    width: 50%;
+    font-size: 1.5em;
+    border: 1px solid #000a;
+    padding-left: 10px;
+}
+
+.modal-btn {
+    height: 20%;
+    width: 30%;
+    margin: 0px auto;
+    background: #A0C4FF;
+    border: none;
+    outline: none !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #0001;
+}
+
+
+/*APP*/
+.main-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*GUI Block*/
+.container-block-gui {
+    width: 40%;
+    max-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    border: 2px solid #aaad;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/*List Block*/
+.container-block-list {
+    width: 65%;
+    height: auto;
+    margin: 20px;
+    border: 2px solid #aaad;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.block-tittle {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 23px;
+    background: #FFC6FF77;
+    border-bottom: 2px solid #aaad;
+    text-align: center;
+}
+
+.input-container {
+    height: 13vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input-name {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input {
+    padding-left: 10px;
+    height: 8vh;
+    width: 100%;
+}
+
+.add-btn {
+    background: #A0C4FF;
+    border: none;
+    outline: none !important;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #0001;
+    height: 40px;
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: #9abdf6;
+}
+
+.pres-rest-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.list-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.gasto-container {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+    margin: 5px 20px;
+    border: 2px solid #ddd;
+}
+
+.gasto-name {
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+.amount-delBTN-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gasto-amount {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    background: #BDB2FF;
+    border-radius: 30px;
+}
+
+.deleteBTN {
+    display: inline;
+    font-size: 1.5em;
+    background: transparent;
+    border: none;
+    color: #aaa7;
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+
+.deleteBTN:hover {
+    color: #FF6D6D;
+}
+
+.presupuesto {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    margin: 10px 20px;
+    background: #CAFFBF;
+}
+
+.restante {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .configuration-modal {
+        width: 90%;
+    }
+    
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .container-block-gui {
+        width: 90%;
+    }
+    
+    .container-block-list {
+        width: 90%;
+    }
+    
+}
+
